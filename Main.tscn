@@ -16,6 +16,14 @@ _data = {
 script = ExtResource( 1 )
 Mob = ExtResource( 2 )
 
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 480.0
+margin_bottom = 720.0
+color = Color( 0.14902, 0.282353, 0.141176, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Player" parent="." instance=ExtResource( 3 )]
 
 [node name="MobTimer" type="Timer" parent="."]
@@ -36,15 +44,6 @@ curve = SubResource( 1 )
 [node name="MobSpawnLocation" type="PathFollow2D" parent="MobPath"]
 
 [node name="HUD" parent="." instance=ExtResource( 4 )]
-
-[node name="ColorRect" type="ColorRect" parent="."]
-visible = false
-margin_right = 480.0
-margin_bottom = 720.0
-color = Color( 0.235294, 0.686275, 0.2, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Music" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 5 )
